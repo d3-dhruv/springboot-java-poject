@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {
-                git branch: 'main', credentials: 'git-creds' url: 'https://github.com/d3-dhruv/springboot-java-poject.git'
+                git branch: 'main', credentialsId: 'git-creds' url: 'https://github.com/d3-dhruv/springboot-java-poject.git'
             }
         }
         
