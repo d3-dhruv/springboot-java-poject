@@ -24,7 +24,12 @@ pipeline {
                 
                  }
         }
-        
+          stage('Maven Test') {
+            steps {
+               echo 'Maven Test Started'
+               sh 'mvn test'
+            }
+        } 
         
          
     }
